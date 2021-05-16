@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+
+{% block pagecontent %}
+<p>This is the Home page</p>
+
+<h1>Task</h1>
+<ul>
+    {% for task in tasks %}
+        <li>{{ task.title }} created at {{ task.date }}</li>
+    {% endfor %}
+</ul>
+{% endblock pagecontent %}

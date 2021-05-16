@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{custom_title}}-TODO</title>
+</head>
+<body>
+    <h1>Title of the page</h1>
+    <p>content of the page</p>
+    <ul>
+        <li><a href={{url_for('index')}}>Home Page</a></li>
+        <li><a href={{url_for('about')}}>About Page</a></li>
+    </ul>
+    {% block pagecontent %}{% endblock pagecontent %}
+</body>
+</html>
